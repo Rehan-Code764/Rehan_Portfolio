@@ -4,16 +4,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
   <title>Rehan Ansari — Blockchain Developer</title>
-  <link rel="icon" href="./assets/favicon.png?v=2" type="image/png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.png?v=2" type="image/png">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
   <div id="fallback"></div>
+
   <noscript>
     <style>
       #gate {
@@ -26,54 +35,95 @@
       }
     </style>
   </noscript>
+
   <div id="gate">
     <div class="mw" aria-hidden="true"></div>
     <div class="planet" aria-hidden="true"></div>
     <canvas id="warp" aria-hidden="true"></canvas>
+
     <div class="gate-text">
       <div class="eyebrow">Transmission received</div>
       <h2>You are about to enter my universe.</h2>
-      <p>Every block is a star, every chain a constellation. Step through the gate and travel the Milky Way to meet
-        Rehan Ansari, blockchain developer.</p>
+      <p>
+        Every block is a star, every chain a constellation. Step through
+        the gate and travel the Milky Way to meet Rehan Ansari,
+        blockchain developer.
+      </p>
     </div>
-    <button id="portal" type="button" aria-label="Enter the portfolio"><span class="orbit"></span><span
-        class="swirl"><i></i><i></i></span><span class="ticks"></span><span class="ring"></span><span
-        class="eye"></span></button>
+
+    <button id="portal" type="button" aria-label="Enter the portfolio">
+      <span class="orbit"></span>
+      <span class="swirl"><i></i><i></i></span>
+      <span class="ticks"></span>
+      <span class="ring"></span>
+      <span class="eye"></span>
+    </button>
+
     <div class="cta">Click the gate to enter</div>
     <button id="skip" type="button">Skip intro</button>
     <div id="flash"></div>
   </div>
+
   <canvas id="c" aria-hidden="true"></canvas>
-  <nav aria-label="Sections"><a href="#top">Rehan</a>
-    <div class="menu"><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a
-        href="#work">Work</a><a href="#resume">Resume</a><a href="#contact">Contact</a></div><button
-      class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">☀
-      Light</button>
+
+  <!-- Navigation -->
+  <nav aria-label="Sections">
+    <a href="#top">Rehan</a>
+
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="theme-toggle" id="theme-toggle" type="button"
+      aria-label="Switch to light theme" title="Switch theme">
+      ☀ Light
+    </button>
   </nav>
-  <div class="bar" aria-hidden="true"><i id="fill"></i></div>
+
+  <div class="bar" aria-hidden="true">
+    <i id="fill"></i>
+  </div>
 
   <main id="top">
+
+    <!-- Hero -->
     <section>
       <div class="in">
         <h1 id="title" aria-label="Rehan">Rehan</h1>
-        <p class="lead">Rehan Ansari, blockchain developer. Smart contracts, tokens and dApps, built and tested on
-          Ethereum testnets.</p>
+
+        <p class="lead">
+          Rehan Ansari, blockchain developer. Smart contracts, tokens
+          and dApps, built and tested on Ethereum testnets.
+        </p>
+
         <p class="hint">Scroll to fly through the blocks</p>
       </div>
     </section>
 
+    <!-- About -->
     <section id="about">
       <div class="in">
         <h2>Learning in public, shipping in blocks.</h2>
-        <p>I’m a Computer Science diploma student at Jharkhand University of Technology with a strong interest in
-          blockchain and Web3. I write Solidity smart contracts, test them with Remix and MetaMask, and build practical
-          projects that I push to GitHub.</p>
+
+        <p>
+          I’m a Computer Science diploma student at Jharkhand University
+          of Technology with a strong interest in blockchain and Web3.
+          I write Solidity smart contracts, test them with Remix and
+          MetaMask, and build practical projects that I push to GitHub.
+        </p>
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
       <div class="in">
         <h2>Tools I work with</h2>
+
         <ul class="chips">
           <li>Solidity</li>
           <li>Smart Contracts</li>
@@ -92,132 +142,316 @@
       </div>
     </section>
 
+    <!-- Experience -->
     <section id="experience">
       <div class="in">
         <h2>Experience and learning</h2>
+
         <ul class="rows">
-          <li><b>Python Programming Intern, NIT Jamshedpur</b><em>Jun – Jul 2026</em><span>Worked on a Student Dropout
-              Prediction project with machine learning in Python: data processing, model development and
-              analysis.</span></li>
-          <li><b>Blockchain Development Course</b><em>Tutedude</em><span>Completed the course on blockchain and smart
-              contract development.</span></li>
-          <li><b>Blockchain Basics Course, Cyfrin Updraft</b><em>02/11/2026</em><span>Certificate of completion for the
-              Blockchain Basics Course and its exam. Valid until 02/11/2027.</span></li>
-          <li><b>Diploma in Computer Science and Engineering</b><em>Sep 2024 – now</em><span>Jharkhand University of
-              Technology.</span></li>
+
+          <li>
+            <b>Python Programming Intern, NIT Jamshedpur</b>
+            <em>Jun – Jul 2026</em>
+            <span>
+              Worked on a Student Dropout Prediction project with
+              machine learning in Python: data processing, model
+              development and analysis.
+            </span>
+          </li>
+
+          <li>
+            <b>Blockchain Development Course</b>
+            <em>Tutedude</em>
+            <span>
+              Completed the course on blockchain and smart contract
+              development.
+            </span>
+          </li>
+
+          <li>
+            <b>Blockchain Basics Course, Cyfrin Updraft</b>
+            <em>02/11/2026</em>
+            <span>
+              Certificate of completion for the Blockchain Basics
+              Course and its exam. Valid until 02/11/2027.
+            </span>
+          </li>
+
+          <li>
+            <b>Diploma in Computer Science and Engineering</b>
+            <em>Sep 2024 – now</em>
+            <span>Jharkhand University of Technology.</span>
+          </li>
+
         </ul>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="work">
       <div class="in">
         <h2>Selected work</h2>
-        <div class="project-filters" role="group" aria-label="Filter projects by category">
-          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" type="button" data-filter="web3" aria-pressed="false">Web3</button>
-          <button class="filter-btn" type="button" data-filter="solidity" aria-pressed="false">Solidity</button>
-          <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+
+        <div class="project-filters" role="group"
+          aria-label="Filter projects by category">
+
+          <button class="filter-btn active" type="button"
+            data-filter="all" aria-pressed="true">All</button>
+
+          <button class="filter-btn" type="button"
+            data-filter="web3" aria-pressed="false">Web3</button>
+
+          <button class="filter-btn" type="button"
+            data-filter="solidity" aria-pressed="false">Solidity</button>
+
+          <button class="filter-btn" type="button"
+            data-filter="python" aria-pressed="false">Python</button>
+
         </div>
-        <p class="filter-status" id="project-status" aria-live="polite">Showing all 3 projects</p>
+
+        <p class="filter-status" id="project-status" aria-live="polite">
+          Showing all 3 projects
+        </p>
+
         <ul class="rows" id="project-list">
-          <li data-category="web3"><b><a href="https://grade-book-1odfa0jmq-rehan-8819.vercel.app/" target="_blank"
-                rel="noopener">Grade Book dApp</a></b><em>Web3</em><span>A decentralized application I built and
-              deployed on Vercel.</span>
-            <div class="project-actions"><a class="mini-link" href="https://grade-book-1odfa0jmq-rehan-8819.vercel.app/"
-                target="_blank" rel="noopener">Live Demo ↗</a><button class="mini-link detail-btn" type="button"
-                data-project="gradebook">Details</button></div>
+
+          <li data-category="web3">
+            <b>
+              <a href="https://grade-book-1odfa0jmq-rehan-8819.vercel.app/"
+                target="_blank" rel="noopener">
+                Grade Book dApp
+              </a>
+            </b>
+
+            <em>Web3</em>
+
+            <span>
+              A decentralized application I built and deployed on Vercel.
+            </span>
+
+            <div class="project-actions">
+              <a class="mini-link"
+                href="https://grade-book-1odfa0jmq-rehan-8819.vercel.app/"
+                target="_blank" rel="noopener">
+                Live Demo ↗
+              </a>
+
+              <button class="mini-link detail-btn" type="button"
+                data-project="gradebook">
+                Details
+              </button>
+            </div>
           </li>
-          <li data-category="solidity"><b><a href="https://github.com/Rehan-Code764/Solidity_Project" target="_blank"
-                rel="noopener">ERC-20 Token: PRT (Proity)</a></b><em>Solidity</em><span>Custom token built with
-              OpenZeppelin, deployed on the Sepolia testnet, with MetaMask transfers tested.</span>
-            <div class="project-actions"><a class="mini-link" href="https://github.com/Rehan-Code764/Solidity_Project"
-                target="_blank" rel="noopener">GitHub ↗</a><button class="mini-link detail-btn" type="button"
-                data-project="prt">Details</button></div>
+
+          <li data-category="solidity">
+            <b>
+              <a href="https://github.com/Rehan-Code764/Solidity_Project"
+                target="_blank" rel="noopener">
+                ERC-20 Token: PRT (Proity)
+              </a>
+            </b>
+
+            <em>Solidity</em>
+
+            <span>
+              Custom token built with OpenZeppelin, deployed on the
+              Sepolia testnet, with MetaMask transfers tested.
+            </span>
+
+            <div class="project-actions">
+              <a class="mini-link"
+                href="https://github.com/Rehan-Code764/Solidity_Project"
+                target="_blank" rel="noopener">
+                GitHub ↗
+              </a>
+
+              <button class="mini-link detail-btn" type="button"
+                data-project="prt">
+                Details
+              </button>
+            </div>
           </li>
-          <li data-category="python"><b><a
-                href="https://github.com/Rehan-Code764/Python_Cryptography_Blockchain_Projects" target="_blank"
-                rel="noopener">Blockchain Voting System</a></b><em>Python</em><span>A tamper-resistant voting record
-              with voter ID, candidate registration, vote casting and SHA-256 linked blocks.</span>
-            <div class="project-actions"><a class="mini-link"
-                href="https://github.com/Rehan-Code764/Python_Cryptography_Blockchain_Projects" target="_blank"
-                rel="noopener">GitHub ↗</a><button class="mini-link detail-btn" type="button"
-                data-project="voting">Details</button></div>
+
+          <li data-category="python">
+            <b>
+              <a href="https://github.com/Rehan-Code764/Python_Cryptography_Blockchain_Projects"
+                target="_blank" rel="noopener">
+                Blockchain Voting System
+              </a>
+            </b>
+
+            <em>Python</em>
+
+            <span>
+              A tamper-resistant voting record with voter ID, candidate
+              registration, vote casting and SHA-256 linked blocks.
+            </span>
+
+            <div class="project-actions">
+              <a class="mini-link"
+                href="https://github.com/Rehan-Code764/Python_Cryptography_Blockchain_Projects"
+                target="_blank" rel="noopener">
+                GitHub ↗
+              </a>
+
+              <button class="mini-link detail-btn" type="button"
+                data-project="voting">
+                Details
+              </button>
+            </div>
           </li>
+
         </ul>
+
+        <!-- GitHub Repositories -->
         <div class="github-panel">
           <div>
             <h3>More from GitHub</h3>
-            <p id="github-status" aria-live="polite">Loading public repositories…</p>
+            <p id="github-status" aria-live="polite">
+              Loading public repositories…
+            </p>
           </div>
-          <div id="github-repos" class="github-repos"></div><a class="mini-link"
-            href="https://github.com/Rehan-Code764?tab=repositories" target="_blank" rel="noopener">View all
-            repositories ↗</a>
+
+          <div id="github-repos" class="github-repos"></div>
+
+          <a class="mini-link"
+            href="https://github.com/Rehan-Code764?tab=repositories"
+            target="_blank" rel="noopener">
+            View all repositories ↗
+          </a>
         </div>
+
       </div>
     </section>
 
+    <!-- Resume -->
     <section id="resume">
       <div class="in">
         <h2>Resume</h2>
-        <p>Computer Science diploma student focused on blockchain development and Web3, with hands-on work in Solidity
-          smart contracts, ERC-20 tokens and Python.</p>
+
+        <p>
+          Computer Science diploma student focused on blockchain
+          development and Web3, with hands-on work in Solidity smart
+          contracts, ERC-20 tokens and Python.
+        </p>
+
         <div class="facts">
-          <p><b>Certifications:</b> Machine Learning Internship Certificate (NIT Jamshedpur), Blockchain Development
-            Course (Tutedude), Blockchain Basics Course (Cyfrin Updraft)</p>
-          <p><b>Soft skills:</b> Communication, Teamwork, Problem Solving</p>
-          <p><b>Languages:</b> English, Hindi</p>
+          <p>
+            <b>Certifications:</b>
+            Machine Learning Internship Certificate (NIT Jamshedpur),
+            Blockchain Development Course (Tutedude),
+            Blockchain Basics Course (Cyfrin Updraft)
+          </p>
+
+          <p>
+            <b>Soft skills:</b>
+            Communication, Teamwork, Problem Solving
+          </p>
+
+          <p>
+            <b>Languages:</b> English, Hindi
+          </p>
         </div>
-        <div class="resume-actions"><button class="btn" id="dl" type="button">Download resume (PDF)</button><button
-            class="btn btn-secondary" id="preview-resume" type="button">Preview resume</button></div>
+
+        <div class="resume-actions">
+          <button class="btn" id="dl" type="button">
+            Download resume (PDF)
+          </button>
+
+          <button class="btn btn-secondary" id="preview-resume"
+            type="button">
+            Preview resume
+          </button>
+        </div>
+
         <p id="dlnote" role="status"></p>
       </div>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
       <div class="in">
         <h2>Let’s build something.</h2>
-        <a class="mail" href="mailto:bazzigar764@gmail.com">bazzigar764@gmail.com</a>
-        <div class="links"><a href="https://github.com/Rehan-Code764" target="_blank" rel="noopener">GitHub</a><a
-            href="https://www.linkedin.com/in/rehan-ansari-36603a398/" target="_blank"
-            rel="noopener">LinkedIn</a><button class="copy-email" id="copy-email" type="button">Copy email</button>
+
+        <a class="mail" href="mailto:bazzigar764@gmail.com">
+          bazzigar764@gmail.com
+        </a>
+
+        <div class="links">
+          <a href="https://github.com/Rehan-Code764"
+            target="_blank" rel="noopener">
+            GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/rehan-ansari-36603a398/"
+            target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+
+          <button class="copy-email" id="copy-email" type="button">
+            Copy email
+          </button>
         </div>
+
         <form class="contact-form" id="contact-form">
           <h3>Send a message</h3>
 
-          <input type="text" id="visitor-name" name="name" placeholder="Your Name" required>
+          <input type="text" id="visitor-name" name="name"
+            placeholder="Your Name" required>
 
-          <input type="email" id="visitor-email" name="email" placeholder="Your Email" required>
+          <input type="email" id="visitor-email" name="email"
+            placeholder="Your Email" required>
 
-          <textarea id="visitor-message" name="message" placeholder="Your Message" required></textarea>
+          <textarea id="visitor-message" name="message"
+            placeholder="Your Message" required></textarea>
 
           <button type="submit">Send Message</button>
 
           <p id="contact-status" role="status"></p>
-          <p id="contact-status" role="status">This form opens your email app with the message filled in; it does not
-            send anything automatically.</p>
         </form>
-        <p style="margin-top:1.4rem">Based in Dhanbad, Jharkhand, India.</p>
+
+        <p style="margin-top:1.4rem">
+          Based in Dhanbad, Jharkhand, India.
+        </p>
       </div>
     </section>
+
   </main>
-  <button id="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
-  <dialog id="project-dialog" class="site-dialog"><button class="dialog-close" type="button"
+
+  <button id="back-to-top" type="button"
+    aria-label="Back to top" title="Back to top">
+    ↑
+  </button>
+
+  <!-- Project Dialog -->
+  <dialog id="project-dialog" class="site-dialog">
+    <button class="dialog-close" type="button"
       aria-label="Close">×</button>
+
     <div id="project-dialog-content"></div>
   </dialog>
-  <dialog id="resume-dialog" class="site-dialog resume-dialog"><button class="dialog-close" type="button"
-      aria-label="Close">×</button><iframe title="Resume PDF preview" src="assets/Rehan_Ansari_Resume.pdf"></iframe>
+
+  <!-- Resume Dialog -->
+  <dialog id="resume-dialog" class="site-dialog resume-dialog">
+    <button class="dialog-close" type="button"
+      aria-label="Close">×</button>
+
+    <iframe title="Resume PDF preview"
+      src="./Rehan_Ansari_Resume.pdf">
+    </iframe>
   </dialog>
 
+  <!-- External Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/intro.js"></script>
 
-  <script src="js/resume.js"></script>
-  <script src="js/projects.js"></script>
-  <script src="js/features.js"></script>
+  <!-- Local JavaScript -->
+  <script src="./main.js"></script>
+  <script src="./intro.js"></script>
+  <script src="./resume.js"></script>
+  <script src="./projects.js"></script>
+  <script src="./features.js"></script>
+
 </body>
-
 </html>
