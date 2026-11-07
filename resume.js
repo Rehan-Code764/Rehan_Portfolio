@@ -4,7 +4,7 @@
 
   button.addEventListener('click', function () {
     var link = document.createElement('a');
-    link.href = 'assets/Rehan_Ansari_Resume.pdf';
+    link.href = 'Rehan_Ansari_Resume.pdf';
     link.download = 'Rehan_Ansari_Resume.pdf';
     document.body.appendChild(link);
     link.click();
