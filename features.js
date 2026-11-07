@@ -6,7 +6,7 @@
   // Theme switch (saved locally in this browser).
   var themeButton = document.getElementById('theme-toggle');
   var savedTheme = null;
-  try { savedTheme = localStorage.getItem('rehan-portfolio-theme'); } catch (e) {}
+  try { savedTheme = localStorage.getItem('rehan-portfolio-theme'); } catch (e) { }
   if (savedTheme === 'light') document.documentElement.classList.add('light-theme');
 
   function updateThemeLabel() {
@@ -20,7 +20,7 @@
   themeButton.addEventListener('click', function () {
     document.documentElement.classList.toggle('light-theme');
     var theme = document.documentElement.classList.contains('light-theme') ? 'light' : 'dark';
-    try { localStorage.setItem('rehan-portfolio-theme', theme); } catch (e) {}
+    try { localStorage.setItem('rehan-portfolio-theme', theme); } catch (e) { }
     updateThemeLabel();
   });
 
@@ -89,8 +89,8 @@
       if (!response.ok) {
         var errorMessage = result.errors
           ? result.errors.map(function (error) {
-              return error.message;
-            }).join(' ')
+            return error.message;
+          }).join(' ')
           : 'Please try again.';
 
         throw new Error(errorMessage);
